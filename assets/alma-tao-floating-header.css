@@ -1,0 +1,182 @@
+/* Alma Tao - Floating Header Style */
+
+/* Header wrapper flotante */
+.header-wrapper,
+.section-header {
+  position: fixed !important;
+  top: 16px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  padding: 0;
+  background: transparent !important;
+  transform: translateY(0);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Estado sticky siempre visible */
+.shopify-section-header-sticky .header-wrapper,
+.shopify-section-header-sticky .section-header {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
+/* Estado hidden - solo se mueve un poco hacia arriba */
+.shopify-section-header-hidden .header-wrapper,
+.shopify-section-header-hidden .section-header {
+  transform: translateY(-8px) !important;
+  opacity: 0.95 !important;
+}
+
+/* Container interno flotante */
+.header {
+  max-width: 90%;
+  width: auto;
+  margin: 0 auto;
+  background: rgba(245, 241, 235, 0.95) !important;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(60, 47, 30, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(245, 241, 235, 0.3);
+  padding: 12px 32px !important;
+  transition: all 0.3s ease;
+}
+
+/* Header en hover */
+.header:hover {
+  background: rgba(245, 241, 235, 1) !important;
+  box-shadow: 0 6px 25px rgba(60, 47, 30, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Animación suave en scroll */
+.section-header.animate .header-wrapper,
+.section-header.animate .header {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Logo centrado */
+.header__heading-logo {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Navegación horizontal centrada */
+.header__inline-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 12px;
+}
+
+.header__menu-item {
+  position: relative;
+}
+
+.header__menu-item .header__menu-link {
+  color: #3c2f1e;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.header__menu-item .header__menu-link:hover {
+  color: #8b6f3e;
+}
+
+/* Iconos del header */
+.header__icons {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 16px;
+}
+
+/* Prevenir comportamientos toscos */
+.section-header {
+  will-change: transform, opacity;
+}
+
+/* Asegurar que nunca desaparezca completamente */
+.shopify-section-header-hidden {
+  opacity: 0.98 !important;
+  transform: translateY(-4px) !important;
+}
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Announcement bar flotante */
+.utility-bar {
+  background: rgba(232, 221, 209, 0.9);
+  text-align: center;
+  padding: 8px 20px;
+  font-size: 13px;
+  color: #3c2f1e;
+  border-radius: 12px;
+  margin: 8px 20px;
+  backdrop-filter: blur(5px);
+}
+
+/* Override para forzar visibilidad siempre */
+.header-wrapper {
+  visibility: visible !important;
+  display: block !important;
+}
+
+/* Mejor transición para sticky header */
+sticky-header.section-header {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+/* Controlar el sticky header comportamiento */
+.section-header .header-wrapper {
+  position: relative;
+  background: transparent;
+}
+
+/* Responsive */
+@media screen and (max-width: 990px) {
+  .header {
+    max-width: 95%;
+    padding: 10px 20px;
+  }
+
+  .header__inline-menu {
+    gap: 20px;
+    font-size: 13px;
+  }
+
+  .header__icons {
+    position: static;
+    transform: none;
+    margin-top: 12px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .header {
+    max-width: 95%;
+    padding: 8px 16px;
+  }
+
+  .header__inline-menu {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .utility-bar {
+    margin: 8px 10px;
+    font-size: 12px;
+  }
+}
