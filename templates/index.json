@@ -73,7 +73,7 @@
         "image": "shopify://shop_images/banner_alma_tao.jpg",
         "height": "small",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "text_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
         "desktop_content_position": "middle",
@@ -133,24 +133,24 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_cxGk7z": {
+    "image_with_text_7kKxCy": {
       "type": "image-with-text",
       "blocks": {
-        "heading_j3Yhdm": {
+        "heading_jaJYKG": {
           "type": "heading",
           "settings": {
-            "heading": "Medicina Aborigen",
+            "heading": "Astrologia",
             "heading_size": "h2"
           }
         },
-        "text_jqfhzw": {
+        "text_jYhzGE": {
           "type": "text",
           "settings": {
-            "text": "<p>Se basa en el uso de diversas plantas para tratar dolencias, conservando saberes ancestrales y acompañándose de ceremonias tradicionales como temazcales o rituales con cacao, tabaco, chañar o lavanda.</p>",
+            "text": "<p>La <strong>astrología</strong> es una práctica ancestral que conecta los movimientos del universo con la vida en la Tierra. A través de la lectura de los astros, invita a comprender nuestra energía, propósito y vínculos, reconociendo que somos parte de un todo mayor. Sus símbolos y saberes ofrecen una guía para el autoconocimiento, la sanación y la armonía con el cosmos.</p>",
             "text_style": "body"
           }
         },
-        "button_per8hN": {
+        "button_dpPN9n": {
           "type": "button",
           "settings": {
             "button_label": "Sacar turno con Profesional",
@@ -160,9 +160,57 @@
         }
       },
       "block_order": [
-        "heading_j3Yhdm",
-        "text_jqfhzw",
-        "button_per8hN"
+        "heading_jaJYKG",
+        "text_jYhzGE",
+        "button_dpPN9n"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/banner_alma_tao.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "right",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_9M49jb": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_88VCxb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Osteopatia",
+            "heading_size": "h2"
+          }
+        },
+        "text_FNHkeJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Método de tratamiento de las enfermedades que se basa en los masajes y la<br/>manipulación de las articulaciones; se fundamenta en la teoría de que el cuerpo es capaz de<br/>elaborar sus propios remedios contra las enfermedades y acepta el método terapéutico y de<br/>diagnóstico de la medicina científica</p>",
+            "text_style": "body"
+          }
+        },
+        "button_aACPRA": {
+          "type": "button",
+          "settings": {
+            "button_label": "Sacar turno con Profesional",
+            "button_link": "shopify://collections/terapias",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_88VCxb",
+        "text_FNHkeJ",
+        "button_aACPRA"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -186,6 +234,7 @@
     "image_banner",
     "image_with_text_XpGipH",
     "image_with_text_bFCGUQ",
-    "image_with_text_cxGk7z"
+    "image_with_text_7kKxCy",
+    "image_with_text_9M49jb"
   ]
 }
