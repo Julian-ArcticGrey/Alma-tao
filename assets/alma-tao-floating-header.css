@@ -96,6 +96,7 @@
   transform: translateY(-50%);
   display: flex;
   gap: 16px;
+  z-index: 10;
 }
 
 /* Prevenir comportamientos toscos */
@@ -143,40 +144,119 @@ sticky-header.section-header {
   background: transparent;
 }
 
-/* Responsive */
+/* Mobile responsive - clean simple layout */
 @media screen and (max-width: 990px) {
+  /* Reset floating behavior completely */
+  .header-wrapper,
+  .section-header {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    padding: 0 !important;
+    background: #f5f1eb !important;
+    transform: none !important;
+  }
+
+  /* Simple mobile header */
   .header {
-    max-width: 95%;
-    padding: 10px 20px;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    background: #f5f1eb !important;
+    border-radius: 0 !important;
+    box-shadow: 0 2px 4px rgba(60, 47, 30, 0.1) !important;
+    backdrop-filter: none !important;
+    border: none !important;
+    padding: 16px !important;
+    display: grid !important;
+    grid-template-columns: 1fr auto 1fr !important;
+    align-items: center !important;
+    position: relative !important;
   }
 
+  /* Remove hover effects */
+  .header:hover {
+    background: #f5f1eb !important;
+    box-shadow: 0 2px 4px rgba(60, 47, 30, 0.1) !important;
+    transform: none !important;
+  }
+
+  /* Hide logo completely on mobile */
+  .header__heading-logo,
+  .header__heading,
+  .header__heading-logo-wrapper {
+    display: none !important;
+  }
+
+  /* Hide navigation on mobile */
   .header__inline-menu {
-    gap: 20px;
-    font-size: 13px;
+    display: none !important;
   }
 
+  /* Hamburger menu centered */
+  header-drawer {
+    grid-column: 2 !important;
+    justify-self: center !important;
+  }
+
+  /* Icons on the right */
   .header__icons {
-    position: static;
-    transform: none;
-    margin-top: 12px;
-    justify-content: center;
+    grid-column: 3 !important;
+    justify-self: end !important;
+    display: flex !important;
+    gap: 16px !important;
+    position: static !important;
+    transform: none !important;
+  }
+
+  /* Hide announcement bar on mobile */
+  .shopify-section.announcement-bar-section,
+  .shopify-section .utility-bar,
+  .announcement-bar-section,
+  .utility-bar,
+  .announcement-bar,
+  .announcement-bar__message,
+  .announcement-bar__link,
+  .announcement-bar__announcement {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
   }
 }
 
 @media screen and (max-width: 749px) {
   .header {
-    max-width: 95%;
-    padding: 8px 16px;
+    padding: 10px 12px !important;
   }
 
-  .header__inline-menu {
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: center;
+  .header__icons {
+    gap: 12px;
   }
 
   .utility-bar {
-    margin: 8px 10px;
-    font-size: 12px;
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+}
+
+/* Remove complex mobile overrides that break layout */
+
+/* Landscape móvil */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .header-wrapper,
+  .section-header {
+    top: 2px;
+  }
+
+  .header {
+    padding: 4px 12px;
+    gap: 8px;
+  }
+
+  .utility-bar {
+    display: none; /* Ocultar en landscape para ahorrar espacio */
   }
 }
