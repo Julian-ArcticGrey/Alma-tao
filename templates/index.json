@@ -71,13 +71,109 @@
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/banner_alma_tao.jpg",
-        "height": "adapt",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
         "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "right",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_bFCGUQ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_8wn4MR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Medicina Aborigen",
+            "heading_size": "h2"
+          }
+        },
+        "text_gLQ4nh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Se basa en el uso de diversas plantas para tratar dolencias, conservando saberes ancestrales y acompañándose de ceremonias tradicionales como temazcales o rituales con cacao, tabaco, chañar o lavanda.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_txmJGJ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Sacar turno con Profesional",
+            "button_link": "shopify://collections/terapias",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_8wn4MR",
+        "text_gLQ4nh",
+        "button_txmJGJ"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/banner_alma_tao.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "right",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_cxGk7z": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_j3Yhdm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Medicina Aborigen",
+            "heading_size": "h2"
+          }
+        },
+        "text_jqfhzw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Se basa en el uso de diversas plantas para tratar dolencias, conservando saberes ancestrales y acompañándose de ceremonias tradicionales como temazcales o rituales con cacao, tabaco, chañar o lavanda.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_per8hN": {
+          "type": "button",
+          "settings": {
+            "button_label": "Sacar turno con Profesional",
+            "button_link": "shopify://collections/terapias",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_j3Yhdm",
+        "text_jqfhzw",
+        "button_per8hN"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/banner_alma_tao.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
         "mobile_content_alignment": "right",
         "section_color_scheme": "scheme-1",
         "color_scheme": "",
@@ -88,6 +184,8 @@
   },
   "order": [
     "image_banner",
-    "image_with_text_XpGipH"
+    "image_with_text_XpGipH",
+    "image_with_text_bFCGUQ",
+    "image_with_text_cxGk7z"
   ]
 }
