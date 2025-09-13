@@ -24,7 +24,7 @@
         "heading"
       ],
       "settings": {
-        "image": "shopify://shop_images/banner_alma_tao.jpg",
+        "image": "shopify://shop_images/Banner_1.jpg",
         "image_overlay_opacity": 30,
         "image_height": "small",
         "image_behavior": "none",
@@ -118,7 +118,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/banner_alma_tao.jpg",
+        "image": "shopify://shop_images/Aborigen.jpg",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -166,7 +166,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/banner_alma_tao.jpg",
+        "image": "shopify://shop_images/Astrologia.jpg",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -214,7 +214,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/banner_alma_tao.jpg",
+        "image": "shopify://shop_images/Osteopatia.jpg",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
