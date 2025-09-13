@@ -37,48 +37,20 @@
         "show_text_below": false
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "all",
-        "products_to_show": 8,
-        "title": "Terapias Holisticas",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
-      }
-    },
     "image_with_text_XpGipH": {
       "type": "image-with-text",
       "blocks": {
         "heading_kGpkhy": {
           "type": "heading",
           "settings": {
-            "heading": "Imagen con texto",
-            "heading_size": "h1"
+            "heading": "Medicina Tradicional China",
+            "heading_size": "h2"
           }
         },
         "text_jQUaJG": {
           "type": "text",
           "settings": {
-            "text": "<p>Vincula un texto con una imagen para atraer la atención hacia tu producto, colección o artículo de blog seleccionados. Agrega detalles sobre disponibilidad y estilo, o incluso ofrece una reseña.</p>",
+            "text": "<p>La medicina tradicional china (MTC), con más de 3.000 años de historia, se basa en equilibrar el flujo de energía vital <strong>QI</strong> mediante la armonía entre <strong>YIN Y YANG</strong>. Para mantener o restaurar la salud, utiliza prácticas como hierbas medicinales, acupuntura, moxibustión y ventosas. La MTC es reconocida por su enfoque holístico que trata al individuo en su totalidad, incluyendo <strong>cuerpo, mente y espíritu</strong>.</p>",
             "text_style": "body"
           }
         },
@@ -104,10 +76,10 @@
         "layout": "image_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "right",
+        "section_color_scheme": "scheme-1",
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
@@ -116,7 +88,6 @@
   },
   "order": [
     "image_banner",
-    "featured_collection",
     "image_with_text_XpGipH"
   ]
 }
