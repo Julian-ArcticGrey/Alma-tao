@@ -64,10 +64,59 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_XpGipH": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_kGpkhy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Imagen con texto",
+            "heading_size": "h1"
+          }
+        },
+        "text_jQUaJG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vincula un texto con una imagen para atraer la atención hacia tu producto, colección o artículo de blog seleccionados. Agrega detalles sobre disponibilidad y estilo, o incluso ofrece una reseña.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_aQT3VL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Sacar turno con Profesional",
+            "button_link": "shopify://collections/terapias",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_kGpkhy",
+        "text_jQUaJG",
+        "button_aQT3VL"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/banner_alma_tao.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "image_with_text_XpGipH"
   ]
 }
