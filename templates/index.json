@@ -70,7 +70,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/banner_alma_tao.jpg",
+        "image": "shopify://shop_images/Medicina_China.jpg",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
